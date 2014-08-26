@@ -37,6 +37,7 @@
   ))
 
 (add-hook 'dired-mode-hook 'use-monospace-font)
+(add-hook 'magit-mode-hook 'use-monospace-font)
 
 ;; Line numbers
 (global-linum-mode t)
