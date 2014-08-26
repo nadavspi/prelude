@@ -36,10 +36,11 @@
   (defun use-monospace-font ()
     (interactive)
     (face-remap-add-relative 'default '(:family "Input Mono"))
-  ))
+  )
 
 (add-hook 'dired-mode-hook 'use-monospace-font)
-(add-hook 'magit-mode-hook 'use-monospace-font)
+(add-hook 'magit-mode-hook 'use-monospace-font))
+
 
 ;; Line numbers
 (global-linum-mode t)
