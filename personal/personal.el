@@ -52,6 +52,7 @@
   (evil-normal-state)
   (save-buffer))
 (key-chord-define evil-insert-state-map "jk" 'evil-normal-and-save-buffer)
+(key-chord-define evil-insert-state-map "kk" 'evil-normal-state)
 
 (provide 'personal)
 ;;; personal.el ends here
