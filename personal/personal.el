@@ -8,10 +8,6 @@
 ;; Disable flyspell
 (setq prelude-flyspell nil)
 
-;; Default theme
-(disable-theme 'zenburn)
-(load-theme 'color-theme-sanityinc-tomorrow-eighties)
-
 ;; Theme functions
 (defun light ()
 (interactive)
@@ -19,6 +15,10 @@
 (defun dark ()
 (interactive)
 (color-theme-sanityinc-tomorrow-eighties))
+
+;; Default theme
+(disable-theme 'zenburn)
+(dark)
 
 ;; Font settings
 (when (eq system-type 'darwin)
