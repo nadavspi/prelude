@@ -41,5 +41,16 @@
 ;; Line numbers
 (global-linum-mode t)
 
+;; Key chords
+(prelude-require-package 'key-chord)
+(require 'key-chord)
+(key-chord-mode 1)
+
+(defun evil-normal-and-save-buffer()
+  (interactive)
+  (evil-normal-state)
+  (save-buffer))
+(key-chord-define evil-insert-state-map "jk" 'evil-normal-and-save-buffer)
+
 (provide 'personal)
 ;;; personal.el ends here
