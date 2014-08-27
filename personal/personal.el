@@ -8,6 +8,8 @@
 ;; Disable flyspell
 (setq prelude-flyspell nil)
 
+(menu-bar-mode -1)
+
 ;; Theme functions
 (defun light ()
 (interactive)
