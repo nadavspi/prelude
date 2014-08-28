@@ -26,6 +26,7 @@
 (when (eq system-type 'darwin)
   (set-face-attribute 'default nil :height 180)
   (set-default-font "input sans")
+  (setq-default line-spacing 0.05)
   (toggle-word-wrap t)
 
   (defun use-proportional-font ()
@@ -40,6 +41,7 @@
 
 (add-hook 'dired-mode-hook 'use-monospace-font)
 (add-hook 'magit-mode-hook 'use-monospace-font)
+
 
 ;; Line numbers
 (global-linum-mode t)
