@@ -59,5 +59,8 @@
 (key-chord-define evil-insert-state-map "jk" 'evil-normal-and-save-buffer)
 (key-chord-define evil-insert-state-map "kk" 'evil-normal-state)
 
+(prelude-require-package 'evil-matchit)
+(global-evil-matchit-mode 1)
+
 (provide 'personal)
 ;;; personal.el ends here
